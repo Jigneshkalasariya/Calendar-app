@@ -1,0 +1,53 @@
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.month-label {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  padding: 16px;
+}
+
+.date {
+  background: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  padding: 8px;
+  min-height: 100px;
+  cursor: pointer;
+}
+
+.date-header {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.event {
+  background: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-bottom: 4px;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.event cdkDrag {
+  display: block;
+}
+
+.event-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
